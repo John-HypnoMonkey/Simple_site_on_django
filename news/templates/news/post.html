@@ -1,0 +1,9 @@
+{% extends "main/base.html" %}
+{% block content %}
+<h1>{{ news_post.title_text}}</h1>
+<p>{{ news_post.pub_date }}</p>
+<span>
+{{ news_post.content_text }}
+</span>
+<p><a href="{% url 'news:index' %}">back</a></p>
+{% endblock %}
